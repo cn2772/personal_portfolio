@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An exceptionally organized, self-driven, and results-focused professional with outstanding interpersonal communication abilities and a strong background in computer engineering.">
-  <title>Resume | Nayan Soni</title>
+  <meta name="description" content="A highly motivated student, fast learner, and an aspiring software engineer with a passion for coding and problem-solving.">
+  <title>Resume | Chandreyee Nayak</title>
   <link rel="shortcut icon" href="http://example.com/img/logo-black.png" hreflang="en-us">
-  <meta property="og:title" content="Resume | Nayan Soni">
-  <meta property="og:description" content="An exceptionally organized, self-driven, and results-focused professional with outstanding interpersonal communication abilities and a strong background in computer engineering.">
+  <meta property="og:title" content="Resume | Chandreyee Nayak">
+  <meta property="og:description" content="A highly motivated student, fast learner, and an aspiring software engineer with a passion for coding and problem-solving.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://www.example.com/resume">
-  <meta property="og:site_name" content="Resume | Nayan Soni">
+  <meta property="og:site_name" content="Resume | Chandreyee Nayak">
   <meta property="og:image" content="http://example.com/img/og.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="672">
   <meta property="og:image:type" content="image/png">
   <meta property="og:locale" content="en_US">
-  <meta name="keywords" content="Nayan Soni, web developer, software engineer, quantum computing, node.js, react.js">
+  <meta name="keywords" content="Chandreyee Nayak, web developer, software engineer, node.js, react.js">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -30,14 +30,14 @@
   <script type="text/jsx">
 
     var DATA = {
-      name: "Hey, I'm Nayan Soni",
-      subtext: "Developer & designer based in Bangalore, India",
+      name: "Hey, I'm Chandreyee Nayak",
+      subtext: "Highly Motivated Student, Fast learner",
       jobStatus: "Student @ SRM University",
-      twitterURL: 'https://twitter.com/nayan2soni',
-      instaURL: 'https://www.instagram.com/nayan2soni/',
-      githubURL: 'https://github.com/nayan2soni',
-      linkedinURL: 'https://www.linkedin.com/in/nayansoni',
-      resumeURL: 'http://example.com/resume.pdf'
+      twitterURL: '',
+      instaURL: '',
+      githubURL: 'https://github.com/cn2772',
+      linkedinURL: '',
+      resumeURL: ''
     }
 
     var App = React.createClass({
@@ -73,10 +73,10 @@
                 <div className="subtext">{this.props.subtext}</div>
                 <div className="jobStatus">{this.props.jobStatus}</div>
                 <div className="social-links">
-                  <a href={this.props.twitterURL} target="_blank"><i className="fa fa-twitter"></i></a>
-                  <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>
-                  <a href={this.props.githubURL} target="_blank"><i className="fa fa-github"></i></a>
-                  <a href={this.props.linkedinURL} target="_blank"><i className="fa fa-linkedin"></i></a>
+                  {this.props.twitterURL && <a href={this.props.twitterURL} target="_blank"><i className="fa fa-twitter"></i></a>}
+                  {this.props.instaURL && <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>}
+                  {this.props.githubURL && <a href={this.props.githubURL} target="_blank"><i className="fa fa-github"></i></a>}
+                  {this.props.linkedinURL && <a href={this.props.linkedinURL} target="_blank"><i className="fa fa-linkedin"></i></a>}
                 </div>
               </div>
             </div>
